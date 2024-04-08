@@ -27,6 +27,12 @@ Badge getBadge();
 boolean isVisibleInContextMenu();
 ```
 
+This would then be mapped to a `MenuItem` object for use on pages and model-links.
+
+`Group` is a new field which allows developers to group their actions together if need be. There are several predefined groups, but developers can create their own if necessary - `FIRST_IN_APP_BAR, IN_APP_BAR, LAST_IN_APP_BAR, FIRST_IN_MENU, IN_MENU, LAST_IN_MENU`. Suggestions of where best to place an action would be available in the Design Library.
+
+`Action` (name TBC as it conflicts with the current Action model) is a new field which dictates what happens when a user clicks an action. There are several options developers can use - `LinkAction` (the default, defaults to the existing `urlName` field), `ConfirmationAction` (displays a confirmation popup, e.g. for deleting projects), `DropdownAction` (for displaying submenus) and lastly `JavascriptAction` (for executing arbitrary JS code, such as for building projects).
+
 ## Questions
 
 ### Why not use a new object?
