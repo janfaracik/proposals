@@ -27,8 +27,6 @@ Badge getBadge();
 boolean isVisibleInContextMenu();
 ```
 
-This would then be mapped to a `MenuItem` object for use on pages and model-links.
-
 `Group` is a new field which allows developers to group their actions together if need be. There are several predefined groups, but developers can create their own if necessary - `FIRST_IN_APP_BAR, IN_APP_BAR, LAST_IN_APP_BAR, FIRST_IN_MENU, IN_MENU, LAST_IN_MENU`. Suggestions of where best to place an action would be available in the Design Library.
 
 `Action` (name TBC as it conflicts with the current Action model) is a new field which dictates what happens when a user clicks an action. There are several options developers can use - `LinkAction` (the default, defaults to the existing `urlName` field), `ConfirmationAction` (displays a confirmation popup, e.g. for deleting projects), `DropdownAction` (for displaying submenus) and lastly `JavascriptAction` (for executing arbitrary JS code, such as for building projects).
@@ -38,6 +36,12 @@ This would then be mapped to a `MenuItem` object for use on pages and model-link
 `Badge` is a new field which behaves like existing badge implementations, it allows developers to highlight important information, such as the number of updates available to a user.
 
 `isVisibleInContextMenu` is a new field which dictates if the action is visible in a `model-link` dropdown (not to be confused with the app bar dropdown).
+
+---
+
+Actions are read via the `getTransientActions()` method on `Actionable` and converted to `JSON`, where they're then read via JS and rendered on the page. This allows us to have one consistent API across model-links, buttons and overflow menus. 
+
+The new app bar actions replace the existing `model-link` dropdown implementation, which was previously created via a confusing method call in `side-panel.jelly` to add items to the list. Actions are now identical between the two places, reducing duplication. 
 
 ## Questions
 
