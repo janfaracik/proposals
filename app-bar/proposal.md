@@ -33,6 +33,12 @@ This would then be mapped to a `MenuItem` object for use on pages and model-link
 
 `Action` (name TBC as it conflicts with the current Action model) is a new field which dictates what happens when a user clicks an action. There are several options developers can use - `LinkAction` (the default, defaults to the existing `urlName` field), `ConfirmationAction` (displays a confirmation popup, e.g. for deleting projects), `DropdownAction` (for displaying submenus) and lastly `JavascriptAction` (for executing arbitrary JS code, such as for building projects).
 
+`Semantic` is a new field which defines the _intention_ of an action by changing its appearance (see [Semantics on the Design Library](https://weekly.ci.jenkins.io/design-library/Colors/)). This can be seen in the above pictures where `Build now` and `Delete project` have set the semantic field to `BUILD` and `DESTRUCTIVE` respectively.
+
+`Badge` is a new field which behaves like existing badge implementations, it allows developers to highlight important information, such as the number of updates available to a user.
+
+`isVisibleInContextMenu` is a new field which dictates if the action is visible in a `model-link` dropdown (not to be confused with the app bar dropdown).
+
 ## Questions
 
 ### Why not use a new object?
