@@ -21,9 +21,9 @@ The intention would be to update it to:
 ```java
 String getIconFileName(); // Preexisting
 String getDisplayName(); // Preexisting
-String getUrlName(); // Now deprecated in favour of getAction()
+String getUrlName(); // Now deprecated in favour of getEvent()
 Group getGroup();
-Action getAction(); // Action name not final
+Event getEvent();
 Semantic getSemantic();
 Badge getBadge();
 boolean isVisibleInContextMenu();
@@ -31,7 +31,7 @@ boolean isVisibleInContextMenu();
 
 `Group` is a new field which allows developers to group their actions together if need be. There are several predefined groups, but developers can create their own if necessary - `FIRST_IN_APP_BAR, IN_APP_BAR, LAST_IN_APP_BAR, FIRST_IN_MENU, IN_MENU, LAST_IN_MENU`. Suggestions of where best to place an action would be available in the Design Library.
 
-`Action` (name TBC as it conflicts with the current Action model) is a new field which dictates what happens when a user clicks an action. There are several options developers can use - `LinkAction` (the default, defaults to the existing `urlName` field), `ConfirmationAction` (displays a confirmation popup, e.g. for deleting projects), `DropdownAction` (for displaying submenus) and lastly `JavascriptAction` (for executing arbitrary JS code, such as for building projects).
+`Event` is a new field which dictates what happens when a user clicks an action. There are several options developers can use - `LinkEvent` (the default, defaults to the existing `urlName` field), `ConfirmationEvent` (displays a confirmation popup, e.g. for deleting projects) and lastly `JavascriptAction` (for executing arbitrary JS code, such as for building projects). A `DropdownEvent` (for displaying submenus) could be implemented in the future for complex menus.
 
 `Semantic` is a new field which defines the _intention_ of an action by changing its appearance (see [Semantics on the Design Library](https://weekly.ci.jenkins.io/design-library/Colors/)). This can be seen in the above pictures where `Build now` and `Delete project` have set the semantic field to `BUILD` and `DESTRUCTIVE` respectively.
 
