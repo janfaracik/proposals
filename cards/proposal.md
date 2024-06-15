@@ -6,9 +6,31 @@ Use cards to surface related information and controls to users.
 
 ## Background
 
-Lorem ipsum
+⚠️Draft ⚠️
+
+Currently in Jenkins we show lots of information in job/build screens
+
+This currently takes up lots of vertical space, but little horizontal
+
+we also have really long sidebars, with lots of links, sometimes the same link multiple times
+
+these summary items arent very visual, or consistent, or give much information
 
 ## Proposal
+
+proposal is a new cards system, which automaticlaly resizes to different screen sizes, from smallest to largest
+
+cards can show more info, more visual
+
+cards will have a consistent set of components that can be reused, or developers can add their own
+
+theyll ahve a consistent action row in the top right, same for every card
+
+theyre interactive
+
+theyre expandable
+
+theyre customizable
 
 ## Questions
 
