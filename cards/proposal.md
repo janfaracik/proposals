@@ -8,6 +8,8 @@ Use cards to surface related information and controls to users.
 
 Currently, the job and build screens display a large amount of information that takes up significant vertical space while utilizing little horizontal space. Additionally, the sidebars are often cluttered with numerous, sometimes redundant, links, which can be overwhelming/hard to navigate. The existing summary items lack visual appeal, consistency, and the ability to convey detailed information at a glance.
 
+![Actions](actions.png)
+
 ## Proposal
 
 The proposal is to implement a new cards/widgets system for Jenkins (see https://jenkins-redesign.vercel.app/project/build/375). This aims to address the above issues by organizing key features and actions into customizable, modular components. This will not only make the interface cleaner and more intuitive but also provide a more consistent and informative visual summary for users at all levels.
