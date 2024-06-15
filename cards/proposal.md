@@ -20,6 +20,14 @@ The proposal is to implement a new cards/widgets system for Jenkins (see https:/
 
 The new card system will automatically resize to different screen sizes, from the smallest to the largest. The cards will be more visual and capable of displaying more information. They will have a consistent set of components that can be reused, with the flexibility for developers to add their own. Each card can feature a uniform action row in the top right corner, providing a consistent user experience. The cards will be interactive, expandable, and customizable, allowing developers to tailor the interface to their specific needs and preferences.
 
+### The 'Details' card
+
+The 'Details' card is a reusable card for displaying glancable information about an item (currently in the prototype it's implemented for jobs and builds - but it could be added for nodes and users too etc). 
+
+<img src="details.png" width="371px" alt="Details widget" />
+
+It'll be extensible by developers too, for example, GitHub integration could highlight the branch or pull request that was ran, as well as the latest commit information which triggered that build.
+
 ## Questions
 
 > Should the widgets be of fixed size or do we have a grid where a widget can fill 1x1, 2x1, or whatever number of cells?
@@ -41,3 +49,7 @@ Visibility, size and color should all be customizable too - e.g. the console vie
 > Does the layout adapt to different screen sizes automatically?
 
 Yes, cards and their contents should scale to different screen sizes.
+
+> How would X look in this format?
+
+If you're curious about how a certain feature might look, let me know and I'll prototype something :)
