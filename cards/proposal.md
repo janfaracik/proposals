@@ -6,31 +6,13 @@ Use cards to surface related information and controls to users.
 
 ## Background
 
-⚠️Draft ⚠️
-
-Currently in Jenkins we show lots of information in job/build screens
-
-This currently takes up lots of vertical space, but little horizontal
-
-we also have really long sidebars, with lots of links, sometimes the same link multiple times
-
-these summary items arent very visual, or consistent, or give much information
+Currently, the job and build screens display a large amount of information that takes up significant vertical space while utilizing little horizontal space. Additionally, the sidebars are often cluttered with numerous, sometimes redundant, links, which can be overwhelming/hard to navigate. The existing summary items lack visual appeal, consistency, and the ability to convey detailed information at a glance.
 
 ## Proposal
 
-proposal is a new cards system, which automaticlaly resizes to different screen sizes, from smallest to largest
+The proposal is to implement a new cards/widgets system for Jenkins (see https://jenkins-redesign.vercel.app/project/build/375). This aims to address the above issues by organizing key features and actions into customizable, modular components. This will not only make the interface cleaner and more intuitive but also provide a more consistent and informative visual summary for users at all levels.
 
-cards can show more info, more visual
-
-cards will have a consistent set of components that can be reused, or developers can add their own
-
-theyll ahve a consistent action row in the top right, same for every card
-
-theyre interactive
-
-theyre expandable
-
-theyre customizable
+The new card system will automatically resize to different screen sizes, from the smallest to the largest. The cards will be more visual and capable of displaying more information. They will have a consistent set of components that can be reused, with the flexibility for developers to add their own. Each card can feature a uniform action row in the top right corner, providing a consistent user experience. The cards will be interactive, expandable, and customizable, allowing developers to tailor the interface to their specific needs and preferences.
 
 ## Questions
 
