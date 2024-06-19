@@ -6,6 +6,8 @@ A new navigation model for Jenkins.
 
 ...
 
+See the [prototype](https://jenkins-redesign.vercel.app) for an idea of what it might look like.
+
 ## Proposal
 
 The proposal is to implement a new 
