@@ -2,6 +2,8 @@
 
 A new navigation model for Jenkins.
 
+<img width="75" alt="image" src="https://github.com/janfaracik/proposals/assets/43062514/42b31002-c45d-4802-81ca-389abdfd9802">
+
 ## Background
 
 ...
