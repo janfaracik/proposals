@@ -2,8 +2,8 @@
 
 ## [App bar](app-bar/proposal.md)
 
-Lorem ipsum
+Move actions from the existing sidepanel to the app bar.
 
 ## [Cards](cards/proposal.md)
 
-Lorem ipsum
+Use cards to surface related information and controls to users.
