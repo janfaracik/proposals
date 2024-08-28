@@ -10,7 +10,11 @@ A new dashboard for Jenkins.
 
 The proposal is to implement a new
 
---
+---
+
+The job list should be responsive, right now it overflows quite easily
+
+---
 
 ### Table - what's useful?
 
